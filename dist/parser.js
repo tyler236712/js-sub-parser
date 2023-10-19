@@ -41,6 +41,7 @@ export var toVtt = function (subtitles) {
         var sub = subtitles_1[_i];
         var start = sub.start.replace(",", ".");
         var end = sub.end.replace(",", ".");
+        vtt += "".concat(sub.index, "\n");
         vtt += "".concat(start, " --> ").concat(end, "\n");
         vtt += "".concat(sub.text, "\n\n");
     }

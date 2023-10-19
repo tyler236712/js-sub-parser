@@ -1,4 +1,4 @@
-type Subtitle = {
+export type Subtitle = {
     index: number;
     start: string;
     end: string;
@@ -6,4 +6,3 @@ type Subtitle = {
 };
 export declare const toVtt: (subtitles: Subtitle[]) => Blob;
 export declare const parseFile: (file: File) => Promise<Subtitle[]>;
-export {};
