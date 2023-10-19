@@ -2,6 +2,7 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "noImplicitAny": true,
+    "lib": ["ES2015", "DOM"],
     "module": "es6",
     "target": "es5",
     "strict": true,

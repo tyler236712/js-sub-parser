@@ -1,3 +1,3 @@
-export { parseFile, toVtt } from "./parser"
+export { parseFile, toVtt, type Subtitle } from "./parser"
 
 

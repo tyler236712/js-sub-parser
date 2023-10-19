@@ -1,4 +1,4 @@
-type Subtitle = {
+export type Subtitle = {
     index: number
     start: string
     end: string
@@ -13,6 +13,7 @@ export const toVtt = (subtitles: Subtitle[]): Blob => {
         const start = sub.start.replace(",", ".")
         const end = sub.end.replace(",", ".")
 
+        vtt += `${sub.index}\n`
         vtt += `${start} --> ${end}\n`
         vtt += `${sub.text}\n\n`
     }
